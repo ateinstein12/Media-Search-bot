@@ -19,7 +19,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='You have to subscribe my channel to use the bot',
+                           switch_pm_text='<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>',
                            switch_pm_parameter="subscribe")
         return
 
@@ -75,8 +75,8 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+            InlineKeyboardButton('🔍 Search again', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
