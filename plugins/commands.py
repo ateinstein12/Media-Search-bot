@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
-    if usr_cmdall1.startswith("/start subinps"):
+    if usr_cmdall1.startswith("/start NickxFury"):
         if AUTH_CHANNEL:
             invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
             try:
@@ -56,7 +56,7 @@ async def start(bot, cmd):
                 file_caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔍 Search again', switch_inline_query_current_chat=''),
                         InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
                     ]
                     ]
