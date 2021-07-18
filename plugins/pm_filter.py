@@ -94,7 +94,7 @@ async def filter(client, message):
         )
 
         await message.reply_text(
-                f"<b><a href='https://t.me/MOVIECLUB_CHAT'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -272,8 +272,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🎟 Request Movies', url='https://t.me/MOVIECLUB_CHAT'),
-                        InlineKeyboardButton('Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
+                        InlineKeyboardButton('🎟 Request', url='https://t.me/MOVIECLUB_CHAT'),
+                        InlineKeyboardButton('Channel 🍿', url='https://t.me/MovieClubOfficiall')
                     ]
                     ]
                 
@@ -296,8 +296,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🎟 Request Movies', url='https://t.me/MOVIECLUB_CHAT'),
-                        InlineKeyboardButton('Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
+                        InlineKeyboardButton('🎟 Request', url='https://t.me/MOVIECLUB_CHAT'),
+                        InlineKeyboardButton('Channel 🍿', url='https://t.me/MovieClubOfficiall')
                     ]
                     ]
                 
