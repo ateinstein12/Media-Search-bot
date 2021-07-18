@@ -26,7 +26,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
+                text="<b>Click Here And Join My Official Channel.Then Only You Can Use Me</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -56,10 +56,10 @@ async def filter(client, message):
                 file_id = file.file_id
                 filename = f"📁 [{get_size(file.file_size)}] 📒 {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"📁 {filename}",callback_data=f"NickxFury#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"NickxFury#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAACAgEAAxkBAAEK47Rg9FBsH0caN4O3RwqHUnfPs0EYcwAC6AADHz2RRTycpqDL8FOfIAQ')
             return
 
         if not btn:
@@ -78,7 +78,7 @@ async def filter(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b><a href='https://t.me/MOVIECLUB_CHAT'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -113,7 +113,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"📁 [{get_size(file.file_size)}] 📒 {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"📁 {filename}", url=f"https://telegram.dog/{nyva}?start=NickxFury_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=NickxFury_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -133,7 +133,7 @@ async def group(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b><a href='https://t.me/MOVIECLUB_CHAT'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -149,7 +149,7 @@ async def group(client, message):
         )
 
         await message.reply_text(
-                f"<b><a href='https://t.me/MOVIECLUB_CHAT'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
@@ -255,11 +255,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/subin_works'),
-                    InlineKeyboardButton('🥶 Source Code 🥶', url='https://github.com/subinps/Media-Search-bot')
+                    InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT'),
+                    InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
                 ]
                 ]
-            await query.message.edit(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n🏷️ Language : <code>Python3</code>\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🏷️ Source Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\n🏷️ Request Movies: <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n\n🏷️ Language : <code>Python3</code>\n\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n\n🏷️ Source Code : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>\n\n🏷️ Request Movies: <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -272,8 +272,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT'),
-                        InlineKeyboardButton('🍿Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
+                        InlineKeyboardButton('🎟 Request Movies', url='https://t.me/MOVIECLUB_CHAT'),
+                        InlineKeyboardButton('Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
                     ]
                     ]
                 
@@ -296,8 +296,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT'),
-                        InlineKeyboardButton('🍿Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
+                        InlineKeyboardButton('🎟 Request Movies', url='https://t.me/MOVIECLUB_CHAT'),
+                        InlineKeyboardButton('Official Channel 🍿', url='https://t.me/MovieClubOfficiall')
                     ]
                     ]
                 
