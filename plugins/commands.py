@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie Requested By You, You Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("😎 Join My Official Channel 😎", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
