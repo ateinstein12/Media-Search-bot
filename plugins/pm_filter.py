@@ -18,7 +18,7 @@ async def filter(client, message):
             if user.status == "kicked":
                 await client.send_message(
                     chat_id=message.from_user.id,
-                    text="Sorry Sir, You are Banned to use me.",
+                    text="You are Banned to use me.Byee 🖐️",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -26,11 +26,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("😎 Join Our Official Channel 😎", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -54,9 +54,9 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = f"📁 [{get_size(file.file_size)}] 📒 {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
+                    [InlineKeyboardButton(text=f"📁 {filename}",callback_data=f"NickxFury#{file_id}")]
                     )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
@@ -78,7 +78,7 @@ async def filter(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b><a href='https://t.me/MOVIECLUB_CHAT'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
