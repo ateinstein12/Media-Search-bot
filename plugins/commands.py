@@ -184,7 +184,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT'),
-            InlineKeyboardButton('🥶 Source Code 🥶', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
         ]
         ]
-    await message.reply(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n🏷️ Language : <code>Python3</code>\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🏷️ Source Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\n🏷️ Movies Group : <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n\n🏷️ Language : <code>Python3</code>\n\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n\n🏷️ Source Code : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>\n\n🏷️ Movies Group : <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
