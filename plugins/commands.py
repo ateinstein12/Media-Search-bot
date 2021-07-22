@@ -97,7 +97,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("About 😎", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton("⚠️ FeedBack ⚠️", url="http://t.me/MC_HelperBot")
+                        InlineKeyboardButton("📝 FeedBack 📝", url="http://t.me/MC_HelperBot")
                     ]
                 ]
             )
