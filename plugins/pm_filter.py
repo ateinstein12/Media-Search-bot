@@ -79,7 +79,7 @@ async def filter(client, message):
             )
             await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -96,7 +96,7 @@ async def filter(client, message):
 
         await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -136,7 +136,7 @@ async def group(client, message):
             )
             await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -153,7 +153,7 @@ async def group(client, message):
 
         await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
