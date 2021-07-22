@@ -27,7 +27,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
+                    text="♦️ READ THIS INSTRUCTION ♦️\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -72,7 +72,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
+            text="♦️ READ THIS INSTRUCTION ♦️\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -93,7 +93,11 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Request Movies 🎟", url="https://t.me/MOVIECLUB_CHAT")
                     ],
                     [
-                        InlineKeyboardButton("🕶️ About Me 🕶️", callback_data="about")
+                        InlineKeyboardButton("👩‍💻 Owner", url="http://t.me/NickxFury_bot"),
+                        InlineKeyboardButton("About 😎", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("⚠️ FeedBack ⚠️", url="http://t.me/MC_HelperBot")
                     ]
                 ]
             )
