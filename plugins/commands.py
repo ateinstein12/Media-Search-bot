@@ -191,4 +191,16 @@ async def bot_info(bot, message):
             InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
         ]
         ]
-    await message.reply(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n\n🏷️ Language : <code>Python3</code>\n\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n\n🏷️ Source Code : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>\n\n🏷️ Movies Group : <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await query.message.edit(text="""🙋🏻‍♂️ Hellooo <code> {} 😎</code>
+
+<b>✴️ Owner :</b> <a href='https://t.me/NickxFury_bot'>Nick Fury</a>
+
+<b>✴️ Language :</b> <code>Python3</code>
+
+<b>✴️ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
+
+<b>✴️ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
+
+<b>✴️ Request Movies :</b> <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a>
+
+</b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(query.from_user.mention))
