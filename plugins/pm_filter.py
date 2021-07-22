@@ -26,7 +26,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
+                text="♦️ READ THIS INSTRUCTION ♦️\n\n<i>🗣 In Order To Get The Movie/Series Requested By You.\nYou Will Have To Join Our Official Channel First. After That, Try Accessing Again.</i>\n\n<b>👇 JOIN THE CHANNEL BY CLICKING THE BELOW BUTTON 👇</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -77,9 +77,10 @@ async def filter(client, message):
             buttons.append(
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
-            await message.reply_text(
-                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
-                reply_markup=InlineKeyboardMarkup(buttons)
+            await message.reply_photo(
+                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                reply_markup=InlineKeyboardMarkup(buttons))
             )
             return
 
@@ -93,9 +94,10 @@ async def filter(client, message):
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
         )
 
-        await message.reply_text(
-                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
-                reply_markup=InlineKeyboardMarkup(buttons)
+        await message.reply_photo(
+            photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+            caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+            reply_markup=InlineKeyboardMarkup(buttons))
             )    
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -132,9 +134,10 @@ async def group(client, message):
             buttons.append(
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
-            await message.reply_text(
-                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
-                reply_markup=InlineKeyboardMarkup(buttons)
+            await message.reply_photo(
+                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                reply_markup=InlineKeyboardMarkup(buttons))
             )
             return
 
