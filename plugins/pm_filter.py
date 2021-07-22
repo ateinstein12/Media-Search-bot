@@ -95,9 +95,9 @@ async def filter(client, message):
         )
 
         await message.reply_photo(
-            photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-            caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
-            reply_markup=InlineKeyboardMarkup(buttons))
+                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
+                reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -137,7 +137,7 @@ async def group(client, message):
             await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
                 caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
-                reply_markup=InlineKeyboardMarkup(buttons))
+                reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
 
@@ -151,8 +151,9 @@ async def group(client, message):
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
         )
 
-        await message.reply_text(
-                f"<b><a href='https://t.me/MovieClubOfficiall'>👉 Click Here</a> To Join Movie Club For Your Favorite Movies/Series 🎬\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+        await message.reply_photo(
+                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+                caption=f"<b><a href='https://t.me/MovieClubOfficiall'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} \nRequested By <b><code>{update.from_user.first_name}</code></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
@@ -262,7 +263,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
                 ]
                 ]
-            await query.message.edit(text="<b>🏷️ Owner : <a href='https://t.me/NickxFury'>Nick Fury</a>\n\n🏷️ Language : <code>Python3</code>\n\n🏷️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n\n🏷️ Source Code : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>\n\n🏷️ Request Movies: <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="""🙋🏻‍♂️ Hellooo <code> {}🤓</code>
+<b>🏷️ Owner :</b> <a href='https://t.me/NickxFury_bot'>Nick Fury</a>
+
+<b>🏷️ Language :</b> <code>Python3</code>
+
+<b>🏷️ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
+
+<b>🏷️ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
+
+<b>🏷️ Request Movies :</b> <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a>
+
+</b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(query.from_user.mention)),
 
 
 
