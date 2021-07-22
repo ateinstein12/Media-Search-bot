@@ -56,7 +56,7 @@ async def start(bot, cmd):
                 file_caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🔍 Search again', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔎 Search again', switch_inline_query_current_chat=''),
                         InlineKeyboardButton('Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT')
                     ]
                     ]
@@ -89,7 +89,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🔎 Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Request Movies 🎟", url="https://t.me/MOVIECLUB_CHAT")
                     ],
                     [
