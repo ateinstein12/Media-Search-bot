@@ -79,7 +79,7 @@ async def filter(client, message):
             )
             await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -96,7 +96,7 @@ async def filter(client, message):
 
         await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -136,7 +136,7 @@ async def group(client, message):
             )
             await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -153,7 +153,7 @@ async def group(client, message):
 
         await message.reply_photo(
                 photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><a href='https://t.me/MOVIECLUB_CHAT'>🗣️ Click Here To Join Movie Club For Your Favorite Movies/Series 🎬</a></b>\n\nHere is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
@@ -263,16 +263,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
                 ]
                 ]
-            await query.message.edit(text="""🙋🏻‍♂️ Hellooo <code> {}🤓</code>
-<b>🏷️ Owner :</b> <a href='https://t.me/NickxFury_bot'>Nick Fury</a>
+            await query.message.edit(text="""🙋🏻‍♂️ Hellooo <code> {} 😎</code>
 
-<b>🏷️ Language :</b> <code>Python3</code>
+<b>✴️ Owner :</b> <a href='https://t.me/NickxFury_bot'>Nick Fury</a>
 
-<b>🏷️ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
+<b>✴️ Language :</b> <code>Python3</code>
 
-<b>🏷️ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
+<b>✴️ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
 
-<b>🏷️ Request Movies :</b> <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a>
+<b>✴️ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
+
+<b>✴️ Request Movies :</b> <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a>
 
 </b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(query.from_user.mention)),
 
