@@ -44,7 +44,7 @@ async def answer(bot, query):
             InlineQueryResultCachedDocument(
                 title=file.file_name,
                 file_id=file.file_id,
-                caption="🍿 Join @MOVIECLUB_CHAT For Your Favorite Movies/Series 🍿",
+                caption=file.caption or "💬 @MOVIECLUB_CHAT\n\n📢 @MovieClubOfficiall",
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
@@ -75,8 +75,8 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('🔍 Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT')
+            InlineKeyboardButton('🔎 Search Again', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('Request 🎟', url='https://t.me/MOVIECLUB_CHAT')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
