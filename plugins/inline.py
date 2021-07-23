@@ -44,7 +44,7 @@ async def answer(bot, query):
             InlineQueryResultCachedDocument(
                 title=file.file_name,
                 file_id=file.file_id,
-                caption=file.caption or "<b>💬 @MOVIECLUB_CHAT\n📢 @MovieClubOfficiall</b>",
+                caption=f'<code>{files.file_name}</code>\n\n<b>➖ @MovieClubOfficiall ➖</b>',
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
