@@ -286,6 +286,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 file_caption = files.file_name
                 size=files.file_size
                 caption =f'<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>'
+                if caption is None:
+                    caption = f"<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>"
                 buttons = [
                     [
                         InlineKeyboardButton('🎟 Request', url='https://t.me/MOVIECLUB_CHAT'),
@@ -310,6 +312,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 file_caption = files.file_name
                 size=files.file_size
                 caption =f'<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>'
+                if caption is None:
+                    caption = f"<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>"
                 buttons = [
                     [
                         InlineKeyboardButton('🎟 Request', url='https://t.me/MOVIECLUB_CHAT'),
