@@ -28,9 +28,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
-Hi Bro,
-• This is a Telegram Inline Movie Search Bot Maintained by @NickxFury 👍
-• Here you can search files in inline mode, Just press "Search Here" button and start searching
+Hello !!,
+• This is a Telegram Inline Movie/Series Search Bot Maintained by <a href='https://t.me/NickxFury_bot'>Nick Fury</a> 👍
+• Here you can search files in inline mode, Just press "Search Here" button and start searching Or Just Send Me The Correct Name Of The Movie/Series.
 """
 
 START_MSG = environ.get('START_MSG', default_start_msg)
