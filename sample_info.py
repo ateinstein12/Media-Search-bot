@@ -23,9 +23,9 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
-
-Here you can search files in inline mode. Just press follwing buttons and start searching.
+Hello !!,
+• This is a Telegram Inline Movie/Series Search Bot Maintained by <a href='https://t.me/NickxFury_bot'>Nick Fury</a> 👍
+• Here you can search files in inline mode, Just press "Search Here" button and start searching Or Just Send Me The Correct Name Of The Movie/Series.
 """
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
